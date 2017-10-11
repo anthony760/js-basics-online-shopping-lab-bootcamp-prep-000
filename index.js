@@ -45,9 +45,9 @@ function viewCart() {
 function total() {
   var sum = 0;
   for (var key in cart) {
-    sum = sum + parseInt((`${cart[key]}`));
+    sum = sum + parseInt((`${cart[key]}`), 10);
   }
-  
+
   return sum;
 }
 
