@@ -180,7 +180,7 @@ describe("removeFromCart()", function() {
     // Repeat item name from previous test to prevent hard-coding.
     removeFromCart("yams");
 
-    expect(console.log).toHaveBeenCalledWith("That item is not in your cart!");
+    expect(console.log).toHaveBeenCalledWith("That item is not in your cart.");
   });
 });
 
