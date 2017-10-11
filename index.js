@@ -22,7 +22,7 @@ function viewCart() {
 
   for (var key in keys) {
     if (cart.hasOwnProperty(keys[key])) {
-      items.push(`${keys[key]} at ${cart[keys[key]]}`);
+      items.push(`${keys[key]} at \$${cart[keys[key]]}`);
     }
   }
 
