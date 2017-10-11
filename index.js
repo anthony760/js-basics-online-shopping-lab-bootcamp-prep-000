@@ -21,11 +21,14 @@ function viewCart() {
 
   for (var key in cart) {
     if (cart.hasOwnProperty(key)) {
-      items.push(`${key} at ${cart[key]}`);
+      //items.push(`${key} at ${cart[key]}`);
+      items.push(key + " at " + cart[key]);
     }
   }
 
   var numberOfItems = items.length;
+  console.log(items[0]);
+  console.log(items[1]);
 
   if (numberOfItems < 1) {
     console.log(`Your shopping cart is empty.`);
