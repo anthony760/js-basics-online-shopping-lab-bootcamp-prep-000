@@ -21,8 +21,10 @@ function viewCart() {
   var keys = Object.keys(cart);
 
   for (var key in keys) {
-    if (cart.hasOwnProperty(keys[key])) {
-      items.push(`${keys[key]} at \$${cart[keys[key]]}`);
+    if (cart[key].hasOwnProperty(Object.keys(cart[key]))) {
+      items.push(Object.keys(cart[key]) + " at $" + cart[key][Object.keys(cart[key])]);
+      //console.log(cart[key]);
+      //console.log(Object.keys(cart[key]) + " at " + cart[key][Object.keys(cart[key])]);
     }
   }
 
