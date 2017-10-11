@@ -21,7 +21,7 @@ function viewCart() {
 
   for (var key in cart) {
     if (cart.hasOwnProperty(key)) {
-      items.push(${key} + " at $" + cart[key]);
+      items.push(`${key} at ${cart[key]}`);
     }
   }
 
