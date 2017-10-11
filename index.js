@@ -33,12 +33,12 @@ function viewCart() {
   } else if (numberOfItems === 1) {
     console.log(`In your cart, you have ${items[0]}.`);
   } else {
-    console.log(`In your cart, you have `);
+    var output = `In your cart, you have `;
     for (let i = 0; i < numberOfItems - 1; i++) {
-      console.log(`${items[i]}, `);
+      output += `${items[i]}, `;
     }
 
-    console.log(`and ${items[numberOfItems - 1]}.`);
+    console.log(`${output}and ${items[numberOfItems - 1]}.`);
   }
 }
 
