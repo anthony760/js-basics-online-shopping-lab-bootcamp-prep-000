@@ -43,17 +43,12 @@ function viewCart() {
 }
 
 function total() {
-  var total = 0;
-  var keys = Object.keys(cart);
-
-  for (var key in keys) {
-    if (cart.hasOwnProperty(keys[key])) {
-      total = total + parseInt(cart[keys[key]]);
-      console.log(total);
-    }
+  var sum = 0;
+  for (var key in cart) {
+    sum = sum + parseInt((`${cart[key]}`));
   }
-
-  return 5;
+  
+  return sum;
 }
 
 function removeFromCart(item) {
