@@ -49,10 +49,11 @@ function total() {
   for (var key in keys) {
     if (cart.hasOwnProperty(keys[key])) {
       total = total + parseInt(cart[keys[key]]);
+      console.log(total);
     }
   }
 
-  return total;
+  return parseInt(total);
 }
 
 function removeFromCart(item) {
