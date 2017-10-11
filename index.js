@@ -18,7 +18,7 @@ function addToCart(item) {
 
 function viewCart() {
   var items = new Array();
-  
+
   for (var key in cart) {
     if (cart.hasOwnProperty(key)) {
       items.push(${key} + " at $" + cart[key]);
