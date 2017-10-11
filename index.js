@@ -51,7 +51,7 @@ function total() {
       total = total + parseInt(cart[keys[key]]);
     }
   }
-  
+
   return total;
 }
 
