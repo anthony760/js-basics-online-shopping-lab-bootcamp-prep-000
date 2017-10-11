@@ -48,10 +48,10 @@ function total() {
 
   for (var key in keys) {
     if (cart.hasOwnProperty(keys[key])) {
-      total = total + cart[keys[key]];
+      total = total + parseInt(cart[keys[key]]);
     }
   }
-  //console.log(total);
+  
   return total;
 }
 
