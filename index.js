@@ -43,7 +43,16 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var total = 0;
+  var keys = Object.keys(cart);
+
+  for (var key in keys) {
+    if (cart.hasOwnProperty(keys[key])) {
+      total = total + cart[keys[key]];
+    }
+  }
+  //console.log(total);
+  return total;
 }
 
 function removeFromCart(item) {
