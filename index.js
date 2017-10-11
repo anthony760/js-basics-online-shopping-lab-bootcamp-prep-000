@@ -67,7 +67,7 @@ function removeFromCart(item) {
   for (var object in cart) {
     if (item === Object.keys(cart[object]).toString()) {
       delete cart[object][Object.keys(cart[object]).toString()];
-      return cart;
+      return item;
     }
   }
 
